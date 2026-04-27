@@ -4,7 +4,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikit-learn-1.6-orange)
 ![pandas](https://img.shields.io/badge/pandas-2.2-green)
 
-## 📋 Description du projet
+##  Description du projet
 
 Ce projet implémente un modèle d'arbre de décision pour la détection de fraudes sur des transactions de carte de crédit. Le projet suit la méthodologie **CRISP-DM** (Cross-Industry Standard Process for Data Mining).
 
@@ -111,9 +111,9 @@ Le notebook est organisé en **6 phases** selon CRISP-DM :
 
 | Modèle | Critère | max_depth | Accuracy Train | Accuracy Test |
 |--------|---------|-----------|----------------|---------------|
-| Gini | gini | 3 | ~99.9% | ~99.9% |
-| Entropy | entropy | 3 | ~99.9% | ~99.9% |
-| No Limit | gini | None | 100% | ~99.8% |
+| Gini | gini | 3 | ~38.47% | ~37.43% |
+| Entropy | entropy | 3 | ~38.47% | ~37.43% |
+| No Limit | gini | None | 99% | ~89.2% |
 
 ### Modèle recommandé
 
