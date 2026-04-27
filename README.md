@@ -83,6 +83,7 @@ Le notebook est organisé en **6 phases** selon CRISP-DM :
 ### Phase 3 — Data Preparation
 - Séparation X (features) / y (cible)
 - Train/Test Split (80/20) avec stratification
+- Equilibre des données avec SMOTE
 - **Note** : Les arbres de décision ne nécessitent pas de normalisation
 
 ### Phase 4 — Modeling
@@ -116,26 +117,24 @@ Le notebook est organisé en **6 phases** selon CRISP-DM :
 
 ### Modèle recommandé
 
-- **Critère** : Gini
+- **Critère** : Entropy
 - **max_depth** : 3
-- **class_weight** : 'balanced' (pour gérer le déséquilibre)
 
 ### Métriques clés
 
 | Métrique | Valeur |
 |----------|--------|
-| Accuracy | ~99.9% |
+| Accuracy | ~37.37% |
 | Recall (Frauduleuses) | Variable selon équilibrage |
-| AUC-ROC | > 0.90 |
+| AUC-ROC | < 0.90 |
 
 ### Caractéristiques importantes
 
 Les variables les plus importantes pour la prédiction sont :
-1. `Transaction_Amount`
-2. `Number_of_Transactions_Last_24H`
-3. `Previous_Fraudulent_Transactions`
-4. `Account_Age`
 
+1. `Previous_Fraudulent_Transactions`
+2. `Number_of_Transactions_Last_24H`
+3. `Time_of_Transaction`
 ---
 
 ## ⚠️ Points importants
@@ -170,7 +169,7 @@ Les variables les plus importantes pour la prédiction sont :
 
 ## 📝 Auteurs
 
-- Étudiant : [Votre Nom]
+- Étudiant : YENUI Luther 
 - Entreprise : FraudGuard Solutions
 - Date : Avril 2026
 
